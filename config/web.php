@@ -3,7 +3,7 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'RbasicY',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
@@ -43,7 +43,10 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-    ],
+    ],//components
+    'language' => 'ru-RU',
+    'sourceLanguage' => 'ru-RU',
+    'timeZone' => 'Europe/Kiev',
     'params' => $params,
 ];
 
