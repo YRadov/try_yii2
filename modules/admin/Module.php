@@ -9,9 +9,7 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-
-        $this->setLayoutPath('app/modules/admin/views/layouts/main.php');
-
+        
         // custom initialization code goes here
     }
 }

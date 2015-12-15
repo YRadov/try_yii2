@@ -6,7 +6,7 @@ use app\models\Country;
 
 class CountryController extends \yii\web\Controller
 {
-
+    public $layout = "admin";
 
     public function actionIndex()
     {
