@@ -6,6 +6,11 @@ $config = [
     'id' => 'RbasicY',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -42,10 +47,15 @@ $config = [
         ],
 		'view' => [
 			 'theme' => [
-				 'pathMap' => [
-					'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
+			 		'class' => yii\base\Theme::className(),
+					'basePath' => '@app/themes/snowy',
+			 
+				
+				//adminlte
+				// 'pathMap' => [
+				//	'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
 				//	'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/phundament/app'
-				 ],
+				 //],
 			 ],
 		],
         'log' => [
