@@ -3,7 +3,7 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'RbasicY',
+    'id' => 'RYbasic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
@@ -33,31 +33,18 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
-		'urlManager' => [
+        'urlManager' => [
             'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-			'rules' => [
-			
-			],
+            'rules' => [
+
+            ],
         ],
-		//настройка authManager с помощью DbManager
-		'authManager' => [
+        //настройка authManager с помощью DbManager
+        'authManager' => [
             'class' => 'yii\rbac\DbManager',
         ],
-		'view' => [
-			 'theme' => [
-			 		'class' => yii\base\Theme::className(),
-					'basePath' => '@app/themes/snowy',
-			 
-				
-				//adminlte
-				// 'pathMap' => [
-				//	'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/yiisoft/yii2-app'
-				//	'@app/views' => '@vendor/dmstr/yii2-adminlte-asset/example-views/phundament/app'
-				 //],
-			 ],
-		],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -68,7 +55,7 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-    ],//components
+    ],
     'language' => 'ru-RU',
     'sourceLanguage' => 'ru-RU',
     'timeZone' => 'Europe/Kiev',
