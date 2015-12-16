@@ -10,6 +10,9 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Module',
         ],
+        'test' => [
+            'class' => 'app\modules\test\Module',
+        ],
     ],
     'components' => [
         'request' => [
