@@ -58,7 +58,7 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-    ],
+    ],//components
     'language' => 'ru-RU',
     'sourceLanguage' => 'ru-RU',
     'timeZone' => 'Europe/Kiev',

@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
 <div class="test-default-index">
     <h1><?= $this->context->action->uniqueId ?></h1>
     <p>
@@ -9,4 +12,5 @@
         You may customize this page by editing the following file:<br>
         <code><?= __FILE__ ?></code>
     </p>
+    <?= Html::a('Перейти в контроллер TEST', ['test/index', 'id' => $id], ['class' => 'profile-link']) ?>
 </div>

@@ -2,15 +2,14 @@
 
 namespace app\modules\test\controllers;
 
-use yii\web\Controller;
-
-class DefaultController extends Controller
+class TestController extends \yii\web\Controller
 {
-
-    public $layout = 'test';
+    public $layout = 'test_new';
+    public $defaultAction = 'index';
 
     public function actionIndex()
     {
         return $this->render('index');
     }
+
 }
